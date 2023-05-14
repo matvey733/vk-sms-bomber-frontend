@@ -2,12 +2,12 @@ import "express-async-errors";
 import dotenv from "dotenv";
 dotenv.config();
 import express from "express";
+import cors from "cors";
 const PORT = process.env.PORT ?? 3000;
 
 
 const app = express();
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(cors({ origin: "*" }));
 
 app.get("/bomb", async (req, res) => {
   const urls = process.env.URLS;
