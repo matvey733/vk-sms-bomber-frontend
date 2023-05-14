@@ -1,0 +1,14 @@
+.bomb-btn {
+  background-color: blue;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.bomb-btn:hover {
+  background-color: crimson;
+}
