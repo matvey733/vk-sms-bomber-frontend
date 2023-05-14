@@ -6,7 +6,7 @@ btn.addEventListener("click", async () => {
   progressDiv.textContent = "Bombing...";
 
   try {
-    const result = await fetch("https://vk-sms-bomber-triggerer-server.onrender.com", {
+    const result = await fetch("https://vk-sms-bomber-triggerer-server.onrender.com/bomb", {
     });
     console.log(result);
     resultDiv.textContent = result.status;
