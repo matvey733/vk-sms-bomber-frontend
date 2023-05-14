@@ -9,6 +9,7 @@ const PORT = process.env.PORT ?? 3000;
 const app = express();
 app.use(cors({ origin: "*" }));
 
+app.get("/health", (req, res) => res.status(200).end());
 app.get("/bomb", async (req, res) => {
   const urls = process.env.URLS;
   if (!urls) throw new Error("no urls provided");
